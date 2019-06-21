@@ -1,3 +1,7 @@
 baseURL = "https://jamtalk.netlify.com/"
 languageCode = "en-us"
 title = "Let's JAMstack!"
+staticDir = [
+    "static",
+    "node_modules/reveal.js/js",
+]

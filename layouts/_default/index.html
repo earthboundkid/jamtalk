@@ -1,3 +1,18 @@
-{{ define "main" }}
-  home
+{{ define "body" }}
+  <div class="reveal">
+    <div class="slides">
+      {{ range .Param "slides" }}
+      <section>
+        <h1>
+          {{ .content | markdownify }}
+        </h1>
+      </section>
+      {{ end }}
+    </div>
+  </div>
+  <script src="/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+    });
+  </script>
 {{ end }}

@@ -6,8 +6,8 @@
   "author": "Carl Johnson <me@carlmjohnson.net>",
   "license": "MIT",
   "dependencies": {
-    "@fullhuman/postcss-purgecss": "^1.2.0",
     "autoprefixer": "^9.6.0",
-    "postcss-cli": "^6.1.2"
+    "postcss-cli": "^6.1.2",
+    "reveal.js": "^3.8.0"
   }
 }
