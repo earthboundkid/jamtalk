@@ -1,0 +1,13 @@
+{
+  "name": "jamtalk",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:carlmjohnson/jamtalk.git",
+  "author": "Carl Johnson <me@carlmjohnson.net>",
+  "license": "MIT",
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^1.2.0",
+    "autoprefixer": "^9.6.0",
+    "postcss-cli": "^6.1.2"
+  }
+}
