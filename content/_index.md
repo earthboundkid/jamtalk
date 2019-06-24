@@ -133,12 +133,18 @@ content = """
 content = """
 # Why?
 
+- Simple to **archive**
 - Cheap or **free** hosting
 - No **security** worries
+"""
+
+[[slides]]
+content = """
+# Why?
+
 - Easy to run **locally**
-- Easy **backup**
+- Easy **backup** with Git
 - **Markdown** support
-- Use Git for content
 """
 
 [[slides]]
@@ -181,4 +187,12 @@ content = """
 [Write your own generator*!*](https://blog.thea.codes/a-small-static-site-generator/)
 """
 background = "diy.png"
+
+[[slides]]
+content = """
+Static site generators are great at creating **blogs**, but they can also make **general purpose** websites.
+"""
+
+[[slides]]
+content = "Items in **data** folder can drive site-wide content. **Front-matter** can drive page content."
 +++
