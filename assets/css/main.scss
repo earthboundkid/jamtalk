@@ -13,14 +13,23 @@ html {
 
 body {
   font-family: "Baloo", cursive;
-  background-color: $green;
-}
-
-.present > * {
-  color: $white;
+  background-color: $gray;
+  color: $green;
   text-shadow: 0 0 3px $gray;
 }
 
 a, a:visited {
   color: $blue;
+}
+
+b, i, em, strong {
+  color: $white;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: .75rem;
 }

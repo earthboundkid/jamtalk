@@ -6,6 +6,10 @@
           {{ if .background }}
             data-background-image="/img/{{ .background }}"
             data-background-position='{{ .position | default "top" }}'
+            data-background-size='{{ .size | default "cover" }}'
+            {{ with .repeat }}
+              data-background-repeat="repeat"
+            {{ end }}
           {{ else }}
             data-background-image="/img/bg_stars.gif"
             data-background-size="auto"
