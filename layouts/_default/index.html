@@ -3,6 +3,7 @@
     <div class="slides">
       {{ range .Param "sections" }}
         <section>
+          {{ $background := .background | default "bg_stars.gif" }}
           {{ range .slides }}
             <section
               {{ if .background }}
@@ -13,7 +14,7 @@
                   data-background-repeat="repeat"
                 {{ end }}
               {{ else }}
-                data-background-image="/img/bg_stars.gif"
+                data-background-image="/img/{{ $background }}"
                 data-background-size="auto"
                 data-background-repeat="repeat"
               {{ end }}
