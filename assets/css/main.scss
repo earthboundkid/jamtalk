@@ -1,2 +1,26 @@
 @import 'reveal.scss';
 
+@import url(https://fonts.googleapis.com/css?family=Baloo);
+
+$gray: #8E9B90;
+$white: #D4CDAB;
+$blue: #ADD8E6;
+$green: #93C0A4;
+
+html {
+  font-size: 64px;
+}
+
+body {
+  font-family: "Baloo", cursive;
+  background-color: $green;
+}
+
+.present > * {
+  color: $white;
+  text-shadow: 0 0 3px $gray;
+}
+
+a, a:visited {
+  color: $blue;
+}
