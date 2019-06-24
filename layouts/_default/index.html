@@ -1,24 +1,28 @@
 {{ define "body" }}
   <div class="reveal">
     <div class="slides">
-      {{ range .Param "slides" }}
-        <section
-          {{ if .background }}
-            data-background-image="/img/{{ .background }}"
-            data-background-position='{{ .position | default "top" }}'
-            data-background-size='{{ .size | default "cover" }}'
-            {{ with .repeat }}
-              data-background-repeat="repeat"
-            {{ end }}
-          {{ else }}
-            data-background-image="/img/bg_stars.gif"
-            data-background-size="auto"
-            data-background-repeat="repeat"
+      {{ range .Param "sections" }}
+        <section>
+          {{ range .slides }}
+            <section
+              {{ if .background }}
+                data-background-image="/img/{{ .background }}"
+                data-background-position='{{ .position | default "top" }}'
+                data-background-size='{{ .size | default "cover" }}'
+                {{ with .repeat }}
+                  data-background-repeat="repeat"
+                {{ end }}
+              {{ else }}
+                data-background-image="/img/bg_stars.gif"
+                data-background-size="auto"
+                data-background-repeat="repeat"
+              {{ end }}
+            >
+              <h1>
+                {{ .content | markdownify }}
+              </h1>
+            </section>
           {{ end }}
-        >
-          <h1>
-            {{ .content | markdownify }}
-          </h1>
         </section>
       {{ end }}
     </div>
