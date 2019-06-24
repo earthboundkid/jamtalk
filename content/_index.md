@@ -65,6 +65,10 @@ content = """
 content = "# What?"
 
 [[slides]]
+content = "# What?"
+background = "static-gen.png"
+
+[[slides]]
 content = "# Why?"
 
 [[slides]]

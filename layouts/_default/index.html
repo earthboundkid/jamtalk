@@ -3,9 +3,14 @@
     <div class="slides">
       {{ range .Param "slides" }}
         <section
-          {{ with .background }}
-          data-background-image="/img/{{ . }}"
-          {{ end}}
+          {{ if .background }}
+            data-background-image="/img/{{ .background }}"
+            data-background-position='{{ .position | default "top" }}'
+          {{ else }}
+            data-background-image="/img/bg_stars.gif"
+            data-background-size="auto"
+            data-background-repeat="repeat"
+          {{ end }}
         >
           <h1>
             {{ .content | markdownify }}
@@ -18,6 +23,35 @@
   <script>
     Reveal.initialize({
       history: true
+    });
+
+    function each(qs, cb) {
+      if (typeof qs === "string") {
+        qs = document.querySelectorAll(qs);
+      }
+      if (!qs) {
+        return;
+      }
+      if (qs.length === undefined) {
+        qs = [qs];
+      }
+      for (var i = 0; i < qs.length; i++) {
+        cb(qs[i], i);
+      }
+    }
+
+    function on(ev, qs, cb) {
+      each(qs, function(el) {
+        el.addEventListener(ev, cb);
+      });
+    }
+
+    on("DOMContentLoaded", document, function() {
+      // Open external links in new window
+      each("a[href^=http]", function(el) {
+        el.target = "_blank";
+        el.rel = "noopener noreferrer";
+      });
     });
   </script>
 {{ end }}
