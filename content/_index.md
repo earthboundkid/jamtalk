@@ -119,6 +119,8 @@ background = "elections2.png"
 [[slides]]
 content = """
 [Spotlight PA](https://www.spotlightpa.org/)
+
+[Github](https://github.com/spotlightpa/poor-richard/)
 """
 background = "spotlight.png"
 
