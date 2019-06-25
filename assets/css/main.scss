@@ -43,3 +43,92 @@ body {
     color: $white;
   }
 }
+
+
+.teal-bg {
+  $teal: hsla(180%, 100%, 37%, 1);
+  $orange: hsla(37%, 100%, 64%, 1);
+  $red: hsla(0%, 82%, 65%, 1);
+  $purple: hsla(309%, 100%, 7%, 1);
+  $gray: hsla(207%, 5%, 66%, 1);
+
+  color: $orange;
+  text-shadow: 0 0 3px $purple;
+
+  a, a:visited {
+    color: $red;
+  }
+
+  b, i, em, strong {
+    color: $red;
+  }
+}
+
+.neon-bg {
+  $black: hsla(280%, 6%, 10%, 1);
+  $purple: hsla(263%, 13%, 35%, 1);
+  $teal: hsla(180%, 38%, 39%, 1);
+  $green: hsla(159%, 70%, 51%, 1);
+
+  color: $black;
+  text-shadow: 0 0 3px $purple;
+
+  a, a:visited {
+    color: $green;
+    text-shadow: 0 0 3px $teal;
+  }
+
+  b, i, em, strong {
+    color: $purple;
+    text-shadow: 0 0 3px $black;
+  }
+}
+
+.orange-bg {
+  $orange: hsla(35%, 100%, 50%, 1);
+  $blue: hsla(204%, 100%, 23%, 1);
+  $red: hsla(0%, 100%, 32%, 1);
+  $white: hsla(42%, 75%, 75%, 1);
+  $teal: hsla(182%, 100%, 35%, 1);
+
+  color: $white;
+  text-shadow: 0 0 3px $blue;
+
+  a, a:visited {
+    color: $teal;
+    text-shadow: 0 0 3px $blue;
+  }
+
+  b, i, em, strong {
+    color: $blue;
+    text-shadow: 0 0 3px $orange;
+  }
+}
+
+.purple-bg {
+  $purple: hsla(274%, 84%, 40%, 1);
+  $indigo: hsla(291%, 27%, 51%, 1);
+  $color3: hsla(244%, 16%, 65%, 1);
+  $gray: hsla(201%, 25%, 70%, 1);
+  $teal: hsla(153%, 86%, 81%, 1);
+
+  color: $indigo;
+  text-shadow: 0 0 3px $color3;
+
+  a, a:visited {
+    color: $teal;
+    text-shadow: 0 0 3px $gray;
+  }
+
+  b, i, em, strong {
+    color: $indigo;
+    text-shadow: 0 0 3px $color3;
+  }
+
+}
+
+.rainbow-text h1, h2 {
+  background: linear-gradient(to right,#ff8a00,#da1b60);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

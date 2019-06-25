@@ -2,6 +2,7 @@
 title = "Let's JAMstack!"
 
 [[sections]]
+class = "rainbow-text"
 
 [[sections.slides]]
 background = "michaelsd.gif"
@@ -14,7 +15,7 @@ content = """
 class="black-bg"
 
 [[sections.slides]]
-content = "# Who?"
+content = "Who?"
 
 [[sections.slides]]
 content = """
@@ -54,6 +55,7 @@ content = """
 
 [[sections]]
 background = "bg-jamcentral.gif"
+class = "purple-bg"
 
 [[sections.slides]]
 content = "# When?"
@@ -83,6 +85,7 @@ background = "sj.png"
 
 [[sections]]
 background = "bg-bball.gif"
+class = "neon-bg"
 
 [[sections.slides]]
 content = "# What?"
@@ -121,6 +124,7 @@ content = """
 
 [[sections]]
 background = "bg-jump.gif"
+class = "orange-bg"
 
 [[sections.slides]]
 content = """
@@ -131,14 +135,14 @@ content = """
 content = """
 # Where?
 
-Free or low cost hosting on Amazon S3, Netlify, Github, Gitlab and more.
+Free or low cost hosting on **Amazon S3**, **Netlify**, **Github pages**, **Gitlab pages** and more.
 """
 
 [[sections.slides]]
 content = """
 # Where?
 
-Glitch.com is live code collaboration site, not a static site host, but it will let us work on projects together.
+[Glitch.com](https://glitch.com) is live code collaboration site, not a static site host, but it will let us work on projects together.
 """
 
 [[sections.slides]]
@@ -175,6 +179,7 @@ content = """
 
 [[sections]]
 background = "bg-junior.gif"
+class = "neon-bg"
 
 [[sections.slides]]
 content = """
@@ -218,6 +223,7 @@ content = """
 
 [[sections]]
 background = "bg-souvenirs.gif"
+class = "teal-bg"
 
 [[sections.slides]]
 content = """
