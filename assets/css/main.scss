@@ -1,16 +1,17 @@
 @font-face {
-  font-family: 'Baloo';
+  font-family: "Baloo";
   font-display: swap;
   font-style: normal;
   font-weight: 400;
-  src: local('Baloo Regular'), local('Baloo-Regular'),
-       url('/fonts/baloo-v4-latin_latin-ext-regular.woff2') format('woff2'),
-       url('/fonts/baloo-v4-latin_latin-ext-regular.woff') format('woff');
+  src: local("Baloo Regular"), local("Baloo-Regular"),
+    url("/fonts/baloo-v4-latin_latin-ext-regular.woff2") format("woff2"),
+    url("/fonts/baloo-v4-latin_latin-ext-regular.woff") format("woff");
 }
 
-@import 'reveal.scss';
+@import "reveal.scss";
 
 html {
+  font-family: "Baloo", cursive;
   font-size: 64px;
 }
 
@@ -22,28 +23,27 @@ h2 {
   font-size: 1.25rem;
 }
 
-body {
-  font-family: "Baloo", cursive;
-}
-
 .black-bg {
-  $gray: #8E9B90;
-  $white: #D4CDAB;
-  $blue: #ADD8E6;
-  $green: #93C0A4;
+  $gray: #8e9b90;
+  $white: #d4cdab;
+  $blue: #add8e6;
+  $green: #93c0a4;
 
   color: $green;
   text-shadow: 0 0 3px $gray;
 
-  a, a:visited {
+  a,
+  a:visited {
     color: $blue;
   }
 
-  b, i, em, strong {
+  b,
+  i,
+  em,
+  strong {
     color: $white;
   }
 }
-
 
 .teal-bg {
   $teal: hsla(180%, 100%, 37%, 1);
@@ -55,11 +55,15 @@ body {
   color: $orange;
   text-shadow: 0 0 3px $purple;
 
-  a, a:visited {
+  a,
+  a:visited {
     color: $red;
   }
 
-  b, i, em, strong {
+  b,
+  i,
+  em,
+  strong {
     color: $red;
   }
 }
@@ -73,12 +77,16 @@ body {
   color: $black;
   text-shadow: 0 0 3px $purple;
 
-  a, a:visited {
+  a,
+  a:visited {
     color: $green;
     text-shadow: 0 0 3px $teal;
   }
 
-  b, i, em, strong {
+  b,
+  i,
+  em,
+  strong {
     color: $purple;
     text-shadow: 0 0 3px $black;
   }
@@ -94,12 +102,16 @@ body {
   color: $white;
   text-shadow: 0 0 3px $blue;
 
-  a, a:visited {
+  a,
+  a:visited {
     color: $teal;
     text-shadow: 0 0 3px $blue;
   }
 
-  b, i, em, strong {
+  b,
+  i,
+  em,
+  strong {
     color: $blue;
     text-shadow: 0 0 3px $orange;
   }
@@ -115,20 +127,39 @@ body {
   color: $indigo;
   text-shadow: 0 0 3px $color3;
 
-  a, a:visited {
+  a,
+  a:visited {
     color: $teal;
     text-shadow: 0 0 3px $gray;
   }
 
-  b, i, em, strong {
+  b,
+  i,
+  em,
+  strong {
     color: $indigo;
     text-shadow: 0 0 3px $color3;
   }
-
 }
 
-.rainbow-text h1, h2 {
-  background: linear-gradient(to right,#ff8a00,#da1b60);
+$scarlet: #f71918;
+$redOrange: #e00c14;
+$venetianRed: #cf131a;
+$alizarinCrimson: #fb2f47;
+$darkPink: #fa648e;
+$amaranth: #f24560;
+
+.rainbow-text h1,
+.rainbow-text h2 {
+  background: linear-gradient(
+    to right,
+    $scarlet,
+    $darkPink,
+    $redOrange,
+    $alizarinCrimson,
+    $venetianRed,
+    $amaranth
+  );
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
