@@ -2,6 +2,7 @@
 title = "Let's JAMstack!"
 
 [[sections]]
+
 [[sections.slides]]
 background = "michaelsd.gif"
 content = """
@@ -10,8 +11,19 @@ content = """
 """
 
 [[sections]]
+class="black-bg"
+
 [[sections.slides]]
 content = "# Who?"
+
+[[sections.slides]]
+content = """
+## Who?
+- Knows HTML
+- Has a Github account
+- Uses a Mac
+"""
+
 
 [[sections.slides]]
 content = """
@@ -124,6 +136,13 @@ Free or low cost hosting on Amazon S3, Netlify, Github, Gitlab and more.
 
 [[sections.slides]]
 content = """
+# Where?
+
+Glitch.com is live code collaboration site, not a static site host, but it will let us work on projects together.
+"""
+
+[[sections.slides]]
+content = """
 # Examples
 """
 
@@ -148,6 +167,11 @@ content = """
 [Github](https://github.com/spotlightpa/poor-richard/)
 """
 background = "spotlight.png"
+
+[[sections.slides]]
+content = """
+[This slideshow](https://github.com/carlmjohnson/jamtalk/)
+"""
 
 [[sections]]
 background = "bg-junior.gif"
