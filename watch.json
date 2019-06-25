@@ -1,0 +1,9 @@
+{
+  "install": {
+    "include": [
+      "^run.sh$"
+    ]
+  },
+  "throttle": 100
+}
+

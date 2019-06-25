@@ -1,0 +1,4 @@
+{
+  "install": "./run.sh glitch-install",
+  "start": "./run.sh glitch"
+}
