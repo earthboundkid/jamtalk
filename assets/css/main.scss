@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Baloo';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Baloo Regular'), local('Baloo-Regular'),
+       url('/fonts/baloo-v4-latin_latin-ext-regular.woff2') format('woff2'),
+       url('/fonts/baloo-v4-latin_latin-ext-regular.woff') format('woff');
+}
+
 @import 'reveal.scss';
 
 @import url(https://fonts.googleapis.com/css?family=Baloo);
