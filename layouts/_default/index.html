@@ -4,8 +4,10 @@
       {{ range .Param "sections" }}
         <section>
           {{ $background := .background | default "bg_stars.gif" }}
+          {{ $class := .class | default "" }}
           {{ range .slides }}
             <section
+              class="{{ $class }}"
               {{ if .background }}
                 data-background-image="/img/{{ .background }}"
                 data-background-position='{{ .position | default "top" }}'
