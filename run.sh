@@ -21,10 +21,11 @@ glitch-install)
 
     mkdir -p "$BIN_DIR"
     curl -L "$HUGO_URL" | tar xz -C "$BIN_DIR"
+    PATH="/opt/nvm/versions/node/v12/bin:$PATH" npm install
     ;;
 
 glitch)
-    hugo serve --port 3000
+    PATH="/opt/nvm/versions/node/v12/bin:$PATH" hugo serve --port 3000
     ;;
 
 help)

@@ -9,5 +9,8 @@
     "autoprefixer": "^9.6.0",
     "postcss-cli": "^6.1.2",
     "reveal.js": "^3.8.0"
+  },
+  "engines": {
+    "node": "12.x"
   }
 }
