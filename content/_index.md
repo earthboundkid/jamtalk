@@ -157,6 +157,50 @@ content = """
 """
 
 [[sections]]
+background = "bg-junior.gif"
+class = "neon-bg"
+
+[[sections.slides]]
+content = """
+# Why?
+"""
+
+[[sections.slides]]
+content = """
+# Why?
+
+- Simple to **archive**
+- Cheap or **free** hosting
+- No **security** worries
+"""
+
+[[sections.slides]]
+content = """
+# Why?
+
+- Easy to run **locally**
+- Easy **backup** with Git
+- **Markdown** support
+"""
+
+[[sections.slides]]
+content = """
+# Why not?
+## It’s static
+
+- Same content for _everyone_
+- Need to use Disqus or similar service for comments
+"""
+
+[[sections.slides]]
+content = """
+# Why not?
+
+- Intimidating for non-coders
+- Can be tricky to collaborate (but try using Github or [NetlifyCMS](https://www.netlifycms.org))
+"""
+
+[[sections]]
 background = "bg-jump.gif"
 class = "orange-bg"
 
@@ -209,50 +253,6 @@ background = "spotlight.png"
 [[sections.slides]]
 content = """
 [This slideshow](https://github.com/carlmjohnson/jamtalk/)
-"""
-
-[[sections]]
-background = "bg-junior.gif"
-class = "neon-bg"
-
-[[sections.slides]]
-content = """
-# Why?
-"""
-
-[[sections.slides]]
-content = """
-# Why?
-
-- Simple to **archive**
-- Cheap or **free** hosting
-- No **security** worries
-"""
-
-[[sections.slides]]
-content = """
-# Why?
-
-- Easy to run **locally**
-- Easy **backup** with Git
-- **Markdown** support
-"""
-
-[[sections.slides]]
-content = """
-# Why not?
-## It’s static
-
-- Same content for _everyone_
-- Need to use Disqus or similar service for comments
-"""
-
-[[sections.slides]]
-content = """
-# Why not?
-
-- Intimidating for non-coders
-- Can be tricky to collaborate (but try using Github or [NetlifyCMS](https://www.netlifycms.org))
 """
 
 [[sections]]
