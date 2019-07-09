@@ -6,25 +6,36 @@
           {{ $background := .background | default "bg_stars.gif" }}
           {{ $class := .class | default "" }}
           {{ range .slides }}
-            <section
-              class="{{ $class }}"
-              {{ if .background }}
-                data-background-image="/img/{{ .background }}"
-                data-background-position='{{ .position | default "top" }}'
-                data-background-size='{{ .size | default "cover" }}'
-                {{ with .repeat }}
+            {{ if .rangeTo }}
+              {{ range seq .rangeFrom .rangeTo }}
+              <section>
+                <img
+                  src='/img/demo/{{ printf "%02d" . }}.png'
+                  style="max-height: 80vh; max-width: 90vw"
+                >
+              </section>
+              {{ end }}
+            {{ else }}
+              <section
+                class="{{ $class }}"
+                {{ if .background }}
+                  data-background-image="/img/{{ .background }}"
+                  data-background-position='{{ .position | default "top" }}'
+                  data-background-size='{{ .size | default "cover" }}'
+                  {{ with .repeat }}
+                    data-background-repeat="repeat"
+                  {{ end }}
+                {{ else }}
+                  data-background-image="/img/{{ $background }}"
+                  data-background-size="auto"
                   data-background-repeat="repeat"
                 {{ end }}
-              {{ else }}
-                data-background-image="/img/{{ $background }}"
-                data-background-size="auto"
-                data-background-repeat="repeat"
-              {{ end }}
-            >
-              <h1>
-                {{ .content | markdownify }}
-              </h1>
-            </section>
+              >
+                <h1>
+                  {{ .content | markdownify }}
+                </h1>
+              </section>
+            {{ end }}
           {{ end }}
         </section>
       {{ end }}

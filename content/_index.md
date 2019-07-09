@@ -290,4 +290,54 @@ content = """
 content = """
 # Examples
 """
+
+[[sections.slides]]
+content = """
+# How-to
+
+- **Fork** this talk on Github
+- Sign into **Glitch.com** with Github
+- **Clone** your fork on Glitch
+"""
+
+[[sections.slides]]
+rangeFrom = 1
+rangeTo = 7
+
+[[sections.slides]]
+content = """
+# How-to
+
+Make something **radical** to share with the group. See [gohugo.io](https://gohugo.io) for Hugo documentation.
+
+"""
+
+[[sections.slides]]
+content = """
+# How-to
+
+- **Grant** Glitch Github access
+- **Export** the project to Github
+- Merge the branch to **fork master**
+
+"""
+
+[[sections.slides]]
+rangeFrom = 8
+rangeTo = 18
+
+[[sections.slides]]
+content = """
+# How-to
+
+- Sign into **Netlify.com** with Github
+- **Grant** Netlify Github access
+- **Deploy** your project
+
+"""
+
+[[sections.slides]]
+rangeFrom = 19
+rangeTo = 28
+
 +++
