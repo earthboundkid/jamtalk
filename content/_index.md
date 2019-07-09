@@ -83,12 +83,39 @@ content = """
 [[sections.slides]]
 background = "sj.png"
 
+[[sections.slides]]
+content = """
+[‘Space Jam’ Forever: The Website That Wouldn’t Die](https://www.rollingstone.com/movies/movie-news/space-jam-forever-the-website-that-wouldnt-die-70507/)
+"""
+[[sections.slides]]
+content = """
+[Why Batman Forever is so Important for the Web](https://thehistoryoftheweb.com/batman-forever-important-web/)
+"""
+
 [[sections]]
 background = "bg-bball.gif"
 class = "neon-bg"
 
 [[sections.slides]]
 content = "# What?"
+
+[[sections.slides]]
+content = """
+## What sucked?
+
+- **One guy** was the gatekeeper
+- No **consistency** of pages
+- No **revision** history
+"""
+
+[[sections.slides]]
+content = """
+## What rocked?
+
+- **One person** can do it all
+- Total **flexibility** of pages
+- **Simple** deploy process
+"""
 
 [[sections.slides]]
 content = """
@@ -111,6 +138,13 @@ content = """
 - [Hugo](https://gohugo.io) (Go)
 - [Next](https://nextjs.org) (React)
 
+"""
+
+[[sections.slides]]
+content = """
+Thomas Wilburn
+
+<img src="/img/JAM-benefits.png" alt="JAMstack benefits" style="height: 40vh">
 """
 
 [[sections.slides]]
