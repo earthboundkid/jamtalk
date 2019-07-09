@@ -211,20 +211,6 @@ content = """
 
 [[sections.slides]]
 content = """
-# Where?
-
-Free or low cost hosting on **Amazon S3**, **Netlify**, **Github pages**, **Gitlab pages** and more.
-"""
-
-[[sections.slides]]
-content = """
-# Where?
-
-[Glitch.com](https://glitch.com) is live code collaboration site, not a static site host, but it will let us work on projects together.
-"""
-
-[[sections.slides]]
-content = """
 # Examples
 """
 
@@ -255,6 +241,20 @@ content = """
 [This slideshow](https://github.com/carlmjohnson/jamtalk/)
 """
 
+[[sections.slides]]
+content = """
+# Where?
+
+Free or low cost hosting on **Amazon S3**, **Netlify**, **Github pages**, **Gitlab pages** and more.
+"""
+
+[[sections.slides]]
+content = """
+# Where?
+
+[Glitch.com](https://glitch.com) is live code collaboration site, not a static site host, but it will let us work on projects together.
+"""
+
 [[sections]]
 background = "bg-souvenirs.gif"
 class = "teal-bg"
@@ -278,4 +278,16 @@ Static site generators are great at creating **blogs**, but they can also make *
 
 [[sections.slides]]
 content = "Items in **data** folder can drive site-wide content. **Front-matter** can drive page content."
+
+[[sections.slides]]
+content = """
+> “Bad programmers worry about the **code**. Good programmers worry about **data structures** and their relationships.”
+>
+> Linus Torvalds, 2006
+"""
+
+[[sections.slides]]
+content = """
+# Examples
+"""
 +++
