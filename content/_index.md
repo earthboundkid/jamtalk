@@ -200,10 +200,10 @@ content = """
 [[sections.slides]]
 content = """
 # Why not?
-## It’s static
+## It’s static:
 
 - Same content for _everyone_
-- Need to use Disqus or similar service for comments
+- Need to use JavaScript for _dynamic_ content
 """
 
 [[sections.slides]]
@@ -303,6 +303,33 @@ content = "Items in **data** folder can drive site-wide content. **Front-matter*
 [[sections.slides]]
 content = """
 # Examples
+"""
+
+[[sections.slides]]
+content = """
+# Examples
+- Moving blog off of Tumblr
+"""
+
+[[sections.slides]]
+content = """
+# Examples
+- Using JSON for election guide
+"""
+
+[[sections.slides]]
+content = """
+# Examples
+- [Recreating Space Jam](/bios/)
+"""
+
+[[sections]]
+background = "bg-behind.gif"
+class = "black-bg"
+
+[[sections.slides]]
+content = """
+# Hands on
 """
 
 [[sections.slides]]
