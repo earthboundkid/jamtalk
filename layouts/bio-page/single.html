@@ -1,0 +1,89 @@
+<html>
+  <!-- Copyright 1996 Warner Bros. Online -->
+  <!-- Looney Bios -->
+  <head>
+    <title>
+      Planet B-Ball: {{ .Title }}
+    </title>
+  </head>
+  <body bgcolor="#18ad11" background="/img/jam/bg-bball.gif" text="#030762" link="#050cb2" vlink="#050cb2" alink="#050cb2">
+    <br>
+    <blockquote>
+      <center>
+        <img src="/img/jam/gt-{{ .Page.File.BaseFileName }}.gif" width="208" height="23" alt="{{.Title}}">
+        <br>
+        <img src="/img/jam/g-{{ .Page.File.BaseFileName }}.gif" width="136" height="136" alt="{{.Title}}">
+        <br>
+      </center>
+      <blockquote>
+        <blockquote>
+          Team:
+          <b>
+            {{ .Param "Team" }}
+          </b>
+          <br>
+          Position:
+          <b>
+            {{ .Param "Position" }}
+          </b>
+          <br>
+          Height:
+          <b>
+            {{ .Param "Height" }}
+          </b>
+          <br>
+          Weight:
+          <b>
+            {{ .Param "Player-Weight" }}
+          </b>
+          <br>
+          Born:
+          <b>
+            {{ .Param "Born" }}
+          </b>
+          <br>
+          College:
+          <b>
+            {{ .Param "College" }}
+          </b>
+          <br>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+    <br>
+    <center>
+      <table cellpadding="3" border="1">
+        <tbody>
+          {{ range $i, $row := .Param "stats" }}
+            <tr>
+              {{ range $row }}
+                <td>
+                  {{ if eq $i 0 }}
+                    <b>{{ . }}</b>
+                  {{ else }}
+                    {{ . }}
+                  {{ end }}
+                </td>
+              {{ end }}
+            </tr>
+          {{ end }}
+        </tbody>
+      </table>
+    </center>
+    <br>
+    <br>
+    <center>
+      <a href="{{.Parent.RelPermalink}}">
+        <img src="/img/jam/bios.gif" width="61" height="81" alt="Bios" border="0" hspace="30" align="absmiddle"></a>
+      <font size="-1" color="#ffffff">
+        © 1996 Warner Bros.
+      </font>
+      {{if .PrevInSection}}
+      <a href="{{.PrevInSection.Permalink}}">
+        <img src="/img/jam/next 2.gif" width="61" height="81" alt="Next" border="0" hspace="30" align="absmiddle"></a>
+      {{end}}
+    </center>
+    <a href="ewing.html">
+    </a>
+  </body>
+</html>

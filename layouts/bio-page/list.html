@@ -1,0 +1,74 @@
+<html>
+  <!-- Copyright 1996 Warner Bros. Online -->
+  <!-- Welcome to Planet B-Ball -->
+  <head>
+    <title>
+      {{ .Title }}
+    </title>
+  </head>
+  <body bgcolor="#18ad11" background="/img/jam/bg-bball.gif" text="#030762" link="#050cb2" vlink="#050cb2" alink="#050cb2">
+    <br>
+    <center>
+      <nobr>
+        <a href="nba.html">
+          <img src="/img/jam/n-nba.gif" height="14" width="64" alt="the nba" border="0" hspace="5">
+        </a>
+        <a href="brollbball.html">
+          <img src="/img/jam/n-hoops.gif" height="14" width="117" alt="shooting hoops" border="0" hspace="5">
+        </a>
+        <a href="qtvr.html">
+          <img src="/img/jam/n-jordandome.gif" height="14" width="184" alt="the jordandome" border="0" hspace="5">
+        </a>
+      </nobr>
+    </center>
+    <br>
+    <center>
+      <img src="/img/jam/b-player.gif" height="48" width="278" alt="Player Bios" border="0">
+    </center>
+    <br>
+    <blockquote>
+      <font size="+2">
+        {{ .Content }}
+      </font>
+      <br>
+      <br>
+      <font size="+1">
+        Click on any of the small images to get the full story on these NBA players:
+        <br>
+      </font>
+      <br>
+    </blockquote>
+    <br>
+    <center>
+      <table cellpadding="7" border="0">
+        <tbody>
+          <tr>
+            {{ range $i, $page := .Pages }}
+              {{ if and (modBool $i 3) (ne $i 0) }}
+                </tr>
+                <tr>
+              {{ end }}
+                <td align="center">
+                  <a href="{{ .RelPermalink }}">
+                    <img border="0" src='/img/jam/g-{{ .File.BaseFileName }}sm.gif' width="70" height="70" alt="{{ .Title }}">
+                  </a>
+                </td>
+            {{ end }}
+          </tr>
+        </tbody>
+      </table>
+      <br>
+    </center>
+    <br>
+    <center>
+      <br>
+      <br>
+      <font size="-1" color="#ffffff">
+        SPACE JAM, characters, names, and all related
+        <br>
+        indicia are trademarks of Warner Bros. © 1996
+      </font>
+      <br>
+    </center>
+  </body>
+</html>
