@@ -44,6 +44,9 @@
   <script src="/reveal.js"></script>
   <script>
     Reveal.initialize({
+      {{ if .Site.IsServer }}
+      history: true,
+      {{ end }}
       center: true
     });
 
