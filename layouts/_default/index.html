@@ -8,10 +8,10 @@
           {{ range .slides }}
             {{ if .rangeTo }}
               {{ range seq .rangeFrom .rangeTo }}
-              <section>
-                <img
-                  src='/img/demo/{{ printf "%02d" . }}.png'
-                  style="max-height: 80vh; max-width: 90vw"
+              <section
+                data-background-image='/img/demo/{{ printf "%02d" . }}.png'
+                data-background-size='contain'
+                data-background-position='center'
                 >
               </section>
               {{ end }}
