@@ -8,7 +8,7 @@ class = "rainbow-text"
 background = "michaelsd.gif"
 content = """
 # Let's JAMstack*!*
-## Data-Driven Static Sites (and broken Glitch.com demos!)
+## Data-Driven Static Sites
 """
 
 [[sections]]
