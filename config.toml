@@ -5,3 +5,8 @@ staticDir = [
     "static",
     "node_modules/reveal.js/js",
 ]
+
+[params]
+images = [
+    "/img/jam/bball 2.gif"
+]

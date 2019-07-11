@@ -5,6 +5,8 @@
     {{ $scssOptions := dict "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "node_modules/reveal.js/css") }}
     {{ $styles := resources.Get "css/main.scss" | toCSS $scssOptions | postCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+
+    {{ template "_internal/opengraph.html" . }}
   </head>
   <body>
    {{ block "body" . }}
