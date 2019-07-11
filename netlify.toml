@@ -23,12 +23,12 @@ command = """
     hugo --minify --environment staging --baseURL $DEPLOY_PRIME_URL
 """
 
-[[headers]]
-for = "/*.(js|css|ttf|ttc|otf|eot|woff|woff2)"
-[headers.values]
-Cache-Control = "public, max-age=31536000, immutable" # 1 year
-
-[[headers]]
-for = "/*.(jpg|jpeg|gif|png|ico|cur|gz|svg|svgz|mp4|ogg|ogv|webm|htc)"
-[headers.values]
-Cache-Control = "public, max-age=1209600" # 2 weeks
+# [[headers]]
+# for = "/*.(js|css|ttf|ttc|otf|eot|woff|woff2)"
+# [headers.values]
+# Cache-Control = "public, max-age=31536000, immutable" # 1 year
+#
+# [[headers]]
+# for = "/*.(jpg|jpeg|gif|png|ico|cur|gz|svg|svgz|mp4|ogg|ogv|webm|htc)"
+# [headers.values]
+# Cache-Control = "public, max-age=1209600" # 2 weeks
